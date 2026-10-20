@@ -1,0 +1,9 @@
+# 复制成 local.properties，填入你自己的值（该文件已被 .gitignore 排除）
+#
+# Android SDK 路径
+sdk.dir=/path/to/Android/Sdk
+
+# 接口域名：不填也能编译，但运行时会打到占位地址
+# api.base 指向后端 API 根（末尾带 /api），h5.base 指向网页根，仅用于拼 Referer
+api.base=https://api.example.com/api
+h5.base=https://example.com

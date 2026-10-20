@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  仅 debug 构建生效。
+
+  Android 7（API 24）起，应用默认不信任用户自行安装的 CA 证书，
+  所以用 Charles / Fiddler 抓自己 App 的 HTTPS 请求会全部显示
+  「Client SSL handshake failed」。
+
+  这里显式把 user 证书加进信任链，只为了本地调试。
+  release 包不会包含这个文件，正式版仍然只信任系统 CA。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

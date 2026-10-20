@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  debug 专用清单：只做一件事——让 Charles 的证书被信任，便于抓包调试。
+  main 清单里没有 networkSecurityConfig，所以这里直接加不会冲突。
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application android:networkSecurityConfig="@xml/network_security_config" />
+
+</manifest>
