@@ -20,7 +20,7 @@ minSdk 24 / targetSdk 34 / AGP 8.5.2 / Kotlin 2.0
 
 ## 构建
 
-接口域名不在源码里，通过 `local.properties` 注入：
+接口域名不在源码里，通过 `local.properties` 注入（如果你也是广西学子，私聊我，我会提供接口）：
 
 ```bash
 cp local.properties.example local.properties
